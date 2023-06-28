@@ -111,4 +111,10 @@ describe('KarmaJasmineService', () => {
     expect(service.esPositivo(-2)).toBe(false);
   });
 
+  it('debería devolver la longitud del array',()=>{
+    var array = ["hola",2,45,"mundo"];
+    expect(service.arrayLength(array)).toBe(4);
+  });
+  
+
 });
