@@ -97,4 +97,12 @@ describe('KarmaJasmineService', () => {
     let cadena = 'Hola Mundo';
     expect(service.aMayus(cadena)).toBe('HOLA MUNDO');
   })
+
+
+  it('deberia ser primo',()=>{
+    expect(service.numeroPrimo(5)).toBe(true);
+  });
+  it('debería no ser primo',()=>{
+    expect(service.numeroPrimo(10)).toBe(false);
+  })
 });
