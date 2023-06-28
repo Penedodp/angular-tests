@@ -87,6 +87,11 @@ describe('KarmaJasmineService', () => {
     expect(service.factorial(5)).toBe(120);
     expect(service.factorial(8)).toBe(40320);
   })
+  it('ver maximo de dos numeros', ()=>{
+    const num1 = 3456;
+    const num2 = 2334;
+    expect(service.maximo(num1, num2)).toBe(3456);
+  })
 
 
 });

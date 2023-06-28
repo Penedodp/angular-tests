@@ -39,4 +39,10 @@ export class KarmaJasmineService {
     }
     return resultado;
   }
+
+  maximo(a:number , b : number):number {
+    return Math.max(a,b)
+  }
+
+
 }
