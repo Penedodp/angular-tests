@@ -82,4 +82,11 @@ describe('KarmaJasmineService', () => {
     expect(service.palindromo(palabra)).toEqual("Es palindromo")
     expect(service.palindromo(frase)).toEqual("Es palindromo")
   })
+
+  it('sacar factorial de numero', ()=>{
+    expect(service.factorial(5)).toBe(120);
+    expect(service.factorial(8)).toBe(40320);
+  })
+
+
 });
