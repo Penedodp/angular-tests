@@ -63,5 +63,7 @@ export class KarmaJasmineService {
   esPositivo = (a:number):boolean => a > 0 ? true : false;
 
   arrayLength = (array: any[]): number => array.length;
+
+  promedioArray = (array:number[]):number => array.reduce((acumulador,valor)=>acumulador + valor,0)/array.length;
 }
 

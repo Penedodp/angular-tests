@@ -115,6 +115,10 @@ describe('KarmaJasmineService', () => {
     var array = ["hola",2,45,"mundo"];
     expect(service.arrayLength(array)).toBe(4);
   });
-  
+
+  it('deberia dar el promedio del array',()=>{
+    var array=[1,2,6,35];
+    expect(service.promedioArray(array)).toBe(11);
+  })
 
 });
