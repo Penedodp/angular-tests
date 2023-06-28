@@ -78,6 +78,8 @@ describe('KarmaJasmineService', () => {
 
   it('deberia ser palindromo', ()=>{
     const palabra= "ana";
+    const frase = "Arriba la birra"
     expect(service.palindromo(palabra)).toEqual("Es palindromo")
+    expect(service.palindromo(frase)).toEqual("Es palindromo")
   })
 });

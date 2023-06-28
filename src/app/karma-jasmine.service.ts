@@ -22,9 +22,10 @@ export class KarmaJasmineService {
   }
   esPar = (a: number) => a % 2 == 0 ? "Es par" : "No es par";
 
-  palindromo(palabra:string) {
-    const tryPalindromo = palabra.toLowerCase().split("").reverse().join("");
-    if(tryPalindromo == palabra){
+  palindromo(frase:string) {
+    const fraseString = frase.toLowerCase().replace(/\s/g,"");
+    const tryPalindromo = fraseString.toLowerCase().split("").reverse().join("");
+    if(fraseString == tryPalindromo){
       return "Es palindromo"
     }else{
       return "No es palindromo"
