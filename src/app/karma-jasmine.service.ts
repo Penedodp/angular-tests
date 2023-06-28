@@ -20,5 +20,14 @@ export class KarmaJasmineService {
   multiplicar(a: number, b: number): number {
     return a * b;
   }
-  esPar = (a:number) => a%2 == 0 ? "Es par" : "No es par";
+  esPar = (a: number) => a % 2 == 0 ? "Es par" : "No es par";
+
+  palindromo(palabra:string) {
+    const tryPalindromo = palabra.toLowerCase().split("").reverse().join("");
+    if(tryPalindromo == palabra){
+      return "Es palindromo"
+    }else{
+      return "No es palindromo"
+    }
+  }
 }
