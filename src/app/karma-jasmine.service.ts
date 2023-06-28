@@ -59,5 +59,8 @@ export class KarmaJasmineService {
       return true;
     }
   }
+
+  esPositivo = (a:number):boolean => a > 0 ? true : false;
+
 }
 
