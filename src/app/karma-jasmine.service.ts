@@ -44,5 +44,9 @@ export class KarmaJasmineService {
     return Math.max(a,b)
   }
 
+  aMayus(frase : string):string{
+    return frase.toUpperCase();
+  }
+
 
 }

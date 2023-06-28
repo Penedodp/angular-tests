@@ -93,5 +93,8 @@ describe('KarmaJasmineService', () => {
     expect(service.maximo(num1, num2)).toBe(3456);
   })
 
-
+  it('cadena a minuscula', ()=>{
+    let cadena = 'Hola Mundo';
+    expect(service.aMayus(cadena)).toBe('HOLA MUNDO');
+  })
 });
